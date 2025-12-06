@@ -1,116 +1,187 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>チーム薩摩</title>
-    <link rel="icon" type="image/svg+xml" href="img/top_img.svg">
-    <link rel="alternate icon" type="image/x-icon" href="img/top_img.ico">
-    <link rel="stylesheet" type="text/css" href="index.css" />
-  </head>
-  <body> 
-    <header>
-        <ul class="tab">
-          <li><a href="#top">トップ</a></li>
-          <li><a href="#activity">活動内容</a></li>
-          <li><a href="#members">メンバー</a></li>
-          <li><a href="#working_scene">活動風景</a></li>
-          <li><a href="https://twitter.com/TeamSatsuma?ref_src=twsrc%5Etfw"><b>公式Twitter</b></a></li>
-        </ul>
-    </header> 
-    <div id="top" class="banner"><img src="img/top_img.svg" width="800"></div>
-      <div class="container">
-        <h2>チーム薩摩について</h2>
-          <p>「チーム薩摩」へようこそ！<br>
-          私たち「チーム薩摩」は鹿児島大学出身のメンバーで活動するチームです。<br>
-          このページでは私たちの構成メンバーや活動内容等について紹介します。</p>
-      </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マグマガレージ - Magma Garage</title>
+    <link rel="stylesheet" href="index.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+<body>
+    <header class="fixed-header">
+        <nav>
+            <ul>
+                <li><a href="#about">概要</a></li>
+                <li><a href="#origin">由来</a></li>
+                <li><a href="#members">メンバー</a></li>
+                <li><a href="#history">経歴</a></li>
+                <li><a href="#reports">活動報告</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <ul class="icon">
-      <li id="activity"><img src="img/list_icon.svg">活動内容</li>
-        <p>
-          メンバーが全国に散らばっているため、リモートでの活動が中心です。<br>
-          普段はDiscordやNotionを使用し、加工組み立て時に集まって活動しています。<br>
-        </p>
-      <li id="members"><img src="img/list_icon.svg">メンバー</li>
-        <div class="cards">
-          <div class="card_l">
-            <div class="role">監督</div>
-            <img src="img/list_icon.svg" alt="yoshimi">
-            <div class="name">yoshimi</div>
-          </div>
+    <main>
+        <section id="top" class="hero-section">
+            <h1>マグマガレージ</h1>
+            <p>magma garage</p>
+        </section>
 
-          <div class="card_l">
-            <div class="role">キャプテン</div>
-            <img src="img/k4miku-.jpeg" alt="k4miku-">
-            <div class="name">k4miku-</div>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="card">
-            <div class="role">プロジェクトマネージャー</div>
-            <img src="img/list_icon.svg" alt="sssome">
-            <div class="name">sssome</div>
-          </div>
+        <section id="about" class="content-section">
+            <h2>About Us | 概要</h2>
+            <p>私たち「マグマガレージ」は、同じ大学出身のメンバーで結成されたものづくりサークルです。</p>
+            <p>メンバーは卒業後、各地方に移ったこともあり、普段はリモートでやり取りをしながら自由にプロジェクトを推進しています。この活動を通じて、ものづくりの楽しさと可能性を追求しています。</p>
+            <div class="about-images-container">
+                <div class="about-image-item">
+                    <!-- 1セット目 -->
+                    <img src="img/about_pic1.jpg" alt="大会出場時の様子">
+                    <img src="img/about_pic2.jpg" alt="完成した機体の全体像">
+                    <img src="img/about_pic3.png" alt="加工中の様子">
+                    <img src="img/about_pic4.png" alt="制御の設計">
+                    <img src="img/about_pic5.png" alt="リモートでのやり取り">
 
-          <div class="card">
-            <div class="role">操縦手</div>
-            <img src="img/id.jpeg" alt="id">
-            <div class="name">id</div>
-          </div>
+                    <!-- 2セット目（同じ画像を再度追加） -->
+                    <img src="img/about_pic1.jpg" alt="大会出場時の様子">
+                    <img src="img/about_pic2.jpg" alt="完成した機体の全体像">
+                    <img src="img/about_pic3.png" alt="加工中の様子">
+                    <img src="img/about_pic4.png" alt="制御の設計">
+                    <img src="img/about_pic5.png" alt="リモートでのやり取り">
+                </div>
+            </div>
+        </section>
 
-          <div class="card">
-            <div class="role">安全管理</div>
-            <img src="img/Regen.png" alt="Regen">
-            <div class="name">Regen</div>
-          </div>
+        <section id="origin" class="content-section">
+            <h2>Origin | チーム名の由来</h2>
+            <p>MAGMAは鹿児島の象徴である桜島のマグマ。GARAGEはかつてのサークルメンバーが集まる場。</p>
+            <p>OB・OGという立場になっても学生時代に過ごしたメンバーとロボットづくりの原点に立ち返るという意味で名付けました。</p>
+        </section>
 
-          <div class="card">
-            <div class="role">PR</div>
-            <img src="img/kawazap.png" alt="kawazap">
-            <div class="name">kawazap</div>
-          </div>
+        <section id="members" class="content-section">
+            <h2>Members | メンバー情報</h2>
+            <div class="member-cards-container">
+                <div class="member-card">
+                    <div class="role">監督</div>
+                    <div class="name">yoshimi</div>
+                    <div class="member-photo">
+                        <img src="img/yoshimi.jpg" alt="yoshimi">
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="role">キャプテン</div>
+                    <div class="name">sssome</div>
+                    <div class="member-photo">
+                        <img src="img/sssome.jpg" alt="sssome">
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="role">操縦手</div>
+                    <div class="name">yutabon</div>
+                    <div class="member-photo">
+                        <img src="img/yutabon.jpg" alt="yutabon">
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="role">PM・整備手</div>
+                    <div class="name">Regen</div>
+                    <div class="member-photo">
+                        <img src="img/Regen.png" alt="Regen">
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="role">整備手</div>
+                    <div class="name">kawazap</div>
+                    <div class="member-photo">
+                        <img src="img/kawazap.png" alt="kawazap">
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="role">整備手</div>
+                    <div class="name">id</div>
+                    <div class="member-photo">
+                        <img src="img/id.jpeg" alt="id">
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="role">整備手・PR</div>
+                    <div class="name">RK</div>
+                    <div class="member-photo">
+                        <img src="img/RK.jpg" alt="RK">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-          <div class="card">
-            <div class="role">財務</div>
-            <img src="img/RK.jpg" alt="RK">
-            <div class="name">RK</div>
-          </div>
+        <section id="history" class="content-section">
+            <h2>History | 活動経歴</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023年</div>
+                    <div class="timeline-content">旧チーム「チーム薩摩」を結成
+                        <div class="timeline-image">
+                            <img src="img/team_satsuma.png" alt="CoRE 2025">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024年3月</div>
+                    <div class="timeline-content">CoRE 2024 初出場
+                        <div class="timeline-image">
+                            <img src="img/core2024.png" alt="CoRE 2024">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2025年3月</div>
+                    <div class="timeline-content">CoRE 2025 出場
+                        <div class="timeline-image">
+                            <img src="img/core2025.jpg" alt="CoRE 2025">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2025年6月</div>
+                    <div class="timeline-content">yutabonがチームに参加</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2025年11月</div>
+                    <div class="timeline-content">チーム名を「マグマガレージ」に改名</div>
+                </div>
+            </div>
+        </section>
 
-        </div>
+        <section id="reports" class="content-section">
+            <h2>Activity Reports | 活動報告</h2>
+            <p>直近の活動状況は、X（旧Twitter）にて随時更新しています。</p>
 
+            <div class="twitter-embed-container">
+                <a class="twitter-timeline" href="https://x.com/magma_garage?ref_src=twsrc%5Etfw">@magma_garage の投稿</a>
 
-        <li id="working_scene"><img src="img/list_icon.svg">活動風景</li>
-        <div class="carousel-container">
-          <div class="carousel-slide">
-            <figure class="gazo-box">
-              <img src="img/disco.png" alt="Discord">
-            </figure>      
-            <figure class="gazo-box">
-              <img src="img/assembly.jpg" alt="Assembly">
-            </figure>
-            <figure class="gazo-box">
-              <img src="img/drawio.png" alt="Drawio">
-            </figure>
-          </div>
-          <div class="carousel-dots">
-            <span class="dot active" data-slide="0"></span>
-            <span class="dot" data-slide="1"></span>
-            <span class="dot" data-slide="2"></span>
-          </div>
-        </div>
-    </ul>
-    <div class="container"></div>
-    <div class="twitter">
-      <a>X(旧Twitter)のリンクはこちら</a><br>
-      <a href="https://twitter.com/TeamSatsuma?ref_src=twsrc%5Etfw" 
-         class="twitter-follow-button" 
-         data-size="large" 
-         data-show-count="false">
-        Follow @TeamSatsuma
-      </a>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-    <script src="script/index.js"></script>
-  </body>
+                <blockquote class="twitter-tweet">
+                    <p lang="ja" dir="ltr">
+                        今年もCoRE-1に参戦します!<br>遅ばせながら、貸出機材が無事に届きました!<br>
+                        <a href="https://twitter.com/hashtag/CoREjp?src=hash&amp;ref_src=twsrc%5Etfw">#CoREjp</a>
+                        <a href="https://t.co/9gLGbQ33j5">pic.twitter.com/9gLGbQ33j5</a>
+                    </p>
+                    &mdash; マグマガレージ(CoRE 1部） (@magma_garage)
+                    <a href="https://twitter.com/magma_garage/status/1880956037349757358?ref_src=twsrc%5Etfw">January 19, 2025</a>
+                </blockquote>
+
+                <a href="https://twitter.com/magma_garage?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="ja" data-show-count="false">Follow @x</a>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Contact | お問い合わせ</h2>
+            <p>チームへのお問い合わせ、ご協力のご依頼などは、下記Google FormまたはSNSのDMよりご連絡ください。</p>
+            <div class="contact-details">
+                <p><strong>お問い合わせフォーム:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWByhlQtuqAY5XomTcvCSGScJDEl-s2byY9ttU70E9MS_vdQ/viewform?usp=dialog" target="_blank">お問い合わせはこちら</a></p>
+                <p><strong>公式X（旧Twitter）:</strong> <a href="https://x.com/magma_garage" target="_blank">@magma_garage</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 マグマガレージ. All rights reserved.</p>
+    </footer>
+</body>
 </html>
-
